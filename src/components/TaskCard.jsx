@@ -11,7 +11,7 @@ function TaskCard({ item }) {
       <span className='text-xl bold'>
         {item.title}.
       </span>
-      Para el dia:
+      Asignada:
       <span className='text-xl bold'>
        {item.description}
       </span>

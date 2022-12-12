@@ -1,12 +1,14 @@
+// export const year = ''
+
 export const listado = [
   {
     id: 0,
-    title: 'Leccion Hebreo',
-    description: 'hoy'
+    title: 'Vav Hey Vav',
+    description: 'Reset tiqunim, Adan Qadmon, sin manchas stainless'
   },
   {
     id: 1,
-    title: 'Programacion',
+    title: 'Yud Lamed Yud',
     description: 'dos y cinco'
   }
 ];

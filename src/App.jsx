@@ -2,12 +2,16 @@
 import NavBar from './components/NavBar'
 import TaskList from './components/TaskList'
 import TaskForm from './components/TaskForm'
+<<<<<<< HEAD
+=======
+import second from './components/LeapForm'
+>>>>>>> desarrollo
 import LeapForm from './components/LeapForm'
 
 function App() {
  
   return (
-    <div className='bg-yellow-200 h-screen'>
+    <div className='bg-pink-200 h-screen'>
       <NavBar/>
       <LeapForm/>
       {/* <TaskForm /> */}

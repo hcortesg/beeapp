@@ -6,7 +6,9 @@ export const TaskContext = createContext()
 
 // engloba los componentes
 export function TaskContextProvider(props) {
+
     const [shores, setShores] = useState([])
+    // const [lyear, setLyear] = useState('')
 
     function createShore(dato) {
         if (dato.title != '' && dato.detail != '') {
@@ -29,17 +31,21 @@ export function TaskContextProvider(props) {
         setShores(updated)
     }
 
-    useEffect(() => {
-        setShores(list)
-      }, [])
-    
-    return ( // {valor} es equivalente a {atributo: valor}
-        <TaskContext.Provider value={{
-            shores,
-            createShore,
-            deleteShore
-        }}>
-            {props.children}
-        </TaskContext.Provider>
-    )
+    // function leapYear(year) {
+    // }
+// }
+useEffect(() => {
+    setShores(list)
+}, [])
+
+return ( // {valor} es equivalente a {atributo: valor}
+    <TaskContext.Provider value={{
+        shores,
+        createShore,
+        deleteShore
+        // leapYear
+    }}>
+        {props.children}
+    </TaskContext.Provider>
+)
 }
