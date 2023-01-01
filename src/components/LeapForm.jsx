@@ -17,7 +17,7 @@ function LeapForm() {
 	const embo = (year) => {
 		let rest = year % 19
 		let msg = "El año es de tipo "
-		setLyear(msg + "Jol")
+		setLyear(msg + "Jol (Regular)")
 		if (rest === 0 || rest === 3 || rest === 6 || rest === 8 || rest === 11 || rest === 14 || rest === 17) {
 			setLyear(msg + "Embolismal")
 		}
@@ -39,8 +39,8 @@ function LeapForm() {
 			<form action="#" onSubmit={handleSubmit}
 				className='bg-yellow-50 text-xl bold p-2'
 			>
-				<p className='font-bold'>¿Qué tipo de año es?</p>
-				<p className='font-bold'>Escirba el Año actual</p>
+				<p className='font-bold'>¿El año es emolismal?</p>
+				<p className='font-bold'>Escriba el Año a evaluar</p>
 				<input  type="number" min={1} step={1} ref={txtYear} placeholder="5783"
 					onChange={(e) => {
 						setYear(e.target.value)
